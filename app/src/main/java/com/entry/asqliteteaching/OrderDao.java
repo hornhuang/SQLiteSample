@@ -11,14 +11,13 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Jne
- * Date: 2015/1/6.
- */
 public class OrderDao {
 
     private static final String TAG = "OrdersDao";
-    // 列定义
+
+    /**
+     * 列定义
+     */
     private final String[] ORDER_COLUMNS = new String[] {"Id", "CustomName","OrderPrice","Country"};
 
     private Context context;
@@ -26,7 +25,8 @@ public class OrderDao {
 
     public OrderDao(Context context) {
         this.context = context;
-        ordersDBHelper = new TeachDBHelper(context);// 初始化数据库
+        // 初始化数据库
+        ordersDBHelper = new TeachDBHelper(context);
     }
 
     /**

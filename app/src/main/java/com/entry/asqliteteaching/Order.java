@@ -1,9 +1,5 @@
 package com.entry.asqliteteaching;
 
-/**
- * Created by Jne
- * Date: 2015/1/6.
- */
 public class Order {
     public int id;
     public String customName;
